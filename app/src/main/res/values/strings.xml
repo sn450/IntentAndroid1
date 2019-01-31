@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MY SCHOOL</string>
+    <string name="but1">ADD</string>
+    <string name="but2">DELETE</string>
+    <string name="but3">MODIFY</string>
+    <string name="but4">VIEW</string>
+    <string name="but5">VIEW ALL</string>
+    <string name="but6">SHOW</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>

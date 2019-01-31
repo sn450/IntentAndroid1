@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/ic_launcher_background"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:text="My School App"
+        android:textSize="50sp"
+        android:fontFamily="cursive"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/imgclk"
+        android:defaultFocusHighlightEnabled="true"
+        android:src="@drawable/schoolimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
