@@ -58,20 +58,7 @@ public class StudentDashboard extends AppCompatActivity {
         simpleImageSwitcher.setInAnimation(in);
         simpleImageSwitcher.setOutAnimation(out);
 
-        // ClickListener for NEXT button
-        // When clicked on Button ImageSwitcher will switch between Images
-        // The current Image will go OUT and next Image  will come in with specified animation
-        btnNext.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                currentIndex++;
-                //  Check If index reaches maximum then reset it
-                if (currentIndex == count)
-                    currentIndex = 0;
-                simpleImageSwitcher.setImageResource(imageIds[currentIndex]); // set the image in ImageSwitcher
-            }
-        });
 
         simpleImageSwitcher1.setFactory(new ViewSwitcher.ViewFactory() {
 
@@ -90,18 +77,43 @@ public class StudentDashboard extends AppCompatActivity {
 
         simpleImageSwitcher1.setInAnimation(in);
         simpleImageSwitcher1.setOutAnimation(out);
-
-
-
+        // ClickListener for NEXT button
+        // When clicked on Button ImageSwitcher will switch between Images
+        // The current Image will go OUT and next Image  will come in with specified animation
         btnNext.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
                 // TODO Auto-generated method stub
+                currentIndex++;
                 currentIndex1++;
                 //  Check If index reaches maximum then reset it
-                if (currentIndex1 == count1)
-                    currentIndex1 = 0;
+                if (currentIndex == count && currentIndex1 == count1)
+                    currentIndex=0; currentIndex1 = 0;
+                simpleImageSwitcher.setImageResource(imageIds[currentIndex]); // set the image in ImageSwitcher
                 simpleImageSwitcher1.setImageResource(imageIds1[currentIndex1]); // set the image in ImageSwitcher
+
+
+
+
+            }
+        });// ClickListener for NEXT button
+        // When clicked on Button ImageSwitcher will switch between Images
+        // The current Image will go OUT and next Image  will come in with specified animation
+        btnNext.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                currentIndex++;
+                currentIndex1++;
+                //  Check If index reaches maximum then reset it
+                if (currentIndex == count && currentIndex1 == count1)
+                    currentIndex=0; currentIndex1 = 0;
+                simpleImageSwitcher.setImageResource(imageIds[currentIndex]); // set the image in ImageSwitcher
+                simpleImageSwitcher1.setImageResource(imageIds1[currentIndex1]); // set the image in ImageSwitcher
+
+
+
+
             }
         });
 
