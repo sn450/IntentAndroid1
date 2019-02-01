@@ -112,8 +112,6 @@ public class StudentDashboard extends AppCompatActivity {
                 simpleImageSwitcher1.setImageResource(imageIds1[currentIndex1]); // set the image in ImageSwitcher
 
 
-
-
             }
         });
 
