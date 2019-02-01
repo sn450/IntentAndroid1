@@ -19,7 +19,7 @@ public class StudentDashboard extends AppCompatActivity {
 
     // Array of Image IDs to Show In ImageSwitcher
     int imageIds[] = {R.drawable.i1, R.drawable.i2, R.drawable.i3, R.drawable.i4, R.drawable.i5};
-    int imageIds1[] = {R.drawable.i1, R.drawable.i2, R.drawable.i3, R.drawable.i4, R.drawable.i5};
+    int imageIds1[] = {R.drawable.Aa, R.drawable.Bb, R.drawable.Cc, R.drawable.Dd, R.drawable.i5};
 
     int count = imageIds.length;
     int count1 = imageIds1.length;
